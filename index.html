@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solaris - Hydra Sources</title>
 
-    <link rel="icon" type="image/png" href="img/solaris-icon.png">
-    <link rel="apple-touch-icon" href="img/solaris-icon.png">
+    <link rel="icon" type="image/png" href="img/solaris-icon.png" />
+    <link rel="apple-touch-icon" href="img/solaris-icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./Kazumi Fonte_files/css2" rel="stylesheet">
-    <script defer="" src="./Kazumi Fonte_files/beacon.min.js.baixados" data-cf-beacon="{&quot;token&quot;: &quot;d5d0b711e5b740ca8c8e048cb3b29384&quot;}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="./Kazumi Fonte_files/css2" rel="stylesheet" />
+    <script
+      defer
+      src="./Kazumi Fonte_files/beacon.min.js.baixados"
+      data-cf-beacon='{"token": "d5d0b711e5b740ca8c8e048cb3b29384"}'
+    ></script>
     <style>
       * {
         margin: 0;
@@ -549,7 +555,11 @@
     <div id="updateBar" class="update-bar" style="display: none">
       <div class="update-bar-content">
         <div class="update-bar-loading">
-          <span data-text-pt="Carregando atualizações..." data-text-en="Loading updates...">Loading updates...</span>
+          <span
+            data-text-pt="Carregando atualizações..."
+            data-text-en="Loading updates..."
+            >Loading updates...</span
+          >
         </div>
       </div>
     </div>
@@ -562,43 +572,122 @@
     <header id="title">Solaris - Hydra Sources</header>
 
     <div class="content">
-      <button id="addBtn" onclick="abrirHydra()" data-text-pt="Instalar - Fonte Principal" data-text-en="Install - Main Source">Install - Main Source</button>
-      <button id="addBtn" onclick="abrirHydraVR()" data-text-pt="Instalar - Fonte Fixes" data-text-en="Install - Fixes Source">Install - Fixes Source</button>
-      <button id="copyBtn" onclick="copiarLink()" data-text-pt="Link - Fonte Principal" data-text-en="Link - Main Source">Link - Main Source</button>
-      <button id="copyBtn" onclick="copiarLinkVR()" data-text-pt="Link - Fonte Fixes" data-text-en="Link - Fixes Source">Link - Fixes Source</button>
-      <button id="addBtn" onclick="pedidopraFonte()" data-text-pt="Página - Todos Releases" data-text-en="Page - All Releases">Page - All Releases</button>
-      <button class="donate" onclick="abrirModalDoacao()" data-text-pt="Ajude o Projeto" data-text-en="Help the Project">Help the Project</button>
+      <button
+        id="addBtn"
+        onclick="abrirHydra()"
+        data-text-pt="Instalar - Fonte Principal"
+        data-text-en="Install - Main Source"
+      >
+        Install - Main Source
+      </button>
+      <button
+        id="addBtn"
+        onclick="abrirHydraVR()"
+        data-text-pt="Instalar - Fonte Fixes"
+        data-text-en="Install - Fixes Source"
+      >
+        Install - Fixes Source
+      </button>
+      <button
+        id="copyBtn"
+        onclick="copiarLink()"
+        data-text-pt="Link - Fonte Principal"
+        data-text-en="Link - Main Source"
+      >
+        Link - Main Source
+      </button>
+      <button
+        id="copyBtn"
+        onclick="copiarLinkVR()"
+        data-text-pt="Link - Fonte Fixes"
+        data-text-en="Link - Fixes Source"
+      >
+        Link - Fixes Source
+      </button>
+      <button
+        id="addBtn"
+        onclick="pedidopraFonte()"
+        data-text-pt="Página - Todos Releases"
+        data-text-en="Page - All Releases"
+      >
+        Page - All Releases
+      </button>
+      <button
+        class="donate"
+        onclick="abrirModalDoacao()"
+        data-text-pt="Ajude o Projeto"
+        data-text-en="Help the Project"
+      >
+        Help the Project
+      </button>
     </div>
 
     <div id="donationModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 id="modal-title" data-text-pt="Escolha o método de doação" data-text-en="Choose donation method">Choose donation method</h2>
+          <h2
+            id="modal-title"
+            data-text-pt="Escolha o método de doação"
+            data-text-en="Choose donation method"
+          >
+            Choose donation method
+          </h2>
           <span class="close" onclick="fecharModal()">×</span>
         </div>
 
         <div class="region-options">
-          <button class="region-btn active" onclick="mostrarOpcoes('tradicional')" data-text-pt="Tradicional" data-text-en="Traditional">Traditional</button>
-          <button class="region-btn" onclick="mostrarOpcoes('crypto')" data-text-pt="Criptomoedas" data-text-en="Cryptocurrency">Cryptocurrency</button>
+          <button
+            class="region-btn active"
+            onclick="mostrarOpcoes('tradicional')"
+            data-text-pt="Tradicional"
+            data-text-en="Traditional"
+          >
+            Traditional
+          </button>
+          <button
+            class="region-btn"
+            onclick="mostrarOpcoes('crypto')"
+            data-text-pt="Criptomoedas"
+            data-text-en="Cryptocurrency"
+          >
+            Cryptocurrency
+          </button>
         </div>
 
         <div id="opcoes-tradicional" class="payment-options" style="display: flex">
           <button class="payment-btn paypal-btn" onclick="doarPayPal()">
-            <img src="img/stripe.png" alt="Stripe" width="37" height="23">
-            <span data-text-pt="Doar via Stripe" data-text-en="Donate via Stripe">Donate via Stripe</span>
+            <img src="img/stripe.png" alt="Stripe" width="37" height="23" />
+            <span data-text-pt="Doar via Stripe" data-text-en="Donate via Stripe"
+              >Donate via Stripe</span
+            >
           </button>
           <button class="payment-btn livepix-btn" onclick="doarLivePix()">
-            <img src="img/livepix.png" alt="LivePix" width="37" height="23">
-            <span data-text-pt="Doar via LivePix" data-text-en="Donate via LivePix">Donate via LivePix</span>
+            <img src="img/livepix.png" alt="LivePix" width="37" height="23" />
+            <span data-text-pt="Doar via LivePix" data-text-en="Donate via LivePix"
+              >Donate via LivePix</span
+            >
           </button>
-          <button class="payment-btn mbway-btn" onclick="doarMBWay()">
-            <span data-text-pt="Apoie via Ko-Fi" data-text-en="Support via Ko-Fi">Support via Ko-Fi</span>
-          </button>
-        </div>
+          <a
+            href="COLOQUE_A_SUA_URL_DO_KOFI_AQUI"
+            target="_blank"
+            class="payment-btn mbway-btn"
+            style="text-decoration: none"
+          >
+            <span data-text-pt="Apoie via Ko-Fi" data-text-en="Support via Ko-Fi"
+              >Support via Ko-Fi</span
+            >
+          </a>
+          </div>
 
-        <div id="opcoes-crypto" class="payment-options" style="display: none; flex-direction: column">
+        <div
+          id="opcoes-crypto"
+          class="payment-options"
+          style="display: none; flex-direction: column"
+        >
           <div id="solana-amount-selector">
-            <h4 data-text-pt="Escolha o valor (SOL):" data-text-en="Choose amount (SOL):">Choose amount (SOL):</h4>
+            <h4 data-text-pt="Escolha o valor (SOL):" data-text-en="Choose amount (SOL):">
+              Choose amount (SOL):
+            </h4>
             <div class="amount-buttons">
               <button class="amount-btn active" onclick="setSolAmount(1)">
                 1 SOL
@@ -609,17 +698,38 @@
               <button class="amount-btn" onclick="setSolAmount(10)">
                 10 SOL
               </button>
-              <input type="number" id="custom-amount" data-placeholder-pt="Outro valor" data-placeholder-en="Other amount" placeholder="Other amount" min="0.1" step="0.1">
+              <input
+                type="number"
+                id="custom-amount"
+                data-placeholder-pt="Outro valor"
+                data-placeholder-en="Other amount"
+                placeholder="Other amount"
+                min="0.1"
+                step="0.1"
+              />
             </div>
           </div>
 
           <div id="solana-qr-container">
             <canvas id="solanaQrCode"></canvas>
-            <p style="font-size: 0.8rem; margin-top: 10px" data-text-pt="Escaneie com Phantom Wallet" data-text-en="Scan with Phantom Wallet">Scan with Phantom Wallet</p>
+            <p style="font-size: 0.8rem; margin-top: 10px"
+              data-text-pt="Escaneie com Phantom Wallet"
+              data-text-en="Scan with Phantom Wallet"
+            >
+              Scan with Phantom Wallet
+            </p>
           </div>
           <button class="payment-btn solana-btn" onclick="doarViaSolana()">
-            <img src="./Kazumi Fonte_files/solana-sol-logo-png_seeklogo-423095.png" alt="Solana" width="20">
-            <span data-text-pt="Gerar Link/QR Code" data-text-en="Generate Link/QR Code">Generate Link/QR Code</span>
+            <img
+              src="./Kazumi Fonte_files/solana-sol-logo-png_seeklogo-423095.png"
+              alt="Solana"
+              width="20"
+            />
+            <span
+              data-text-pt="Gerar Link/QR Code"
+              data-text-en="Generate Link/QR Code"
+              >Generate Link/QR Code</span
+            >
           </button>
         </div>
       </div>
@@ -627,13 +737,49 @@
 
     <div class="info">
       <h3 id="fonteHeader" data-text-pt="Sobre" data-text-en="About">About</h3>
-      <p id="fonteInfo" data-text-pt="O intuito de criar estas fontes foi para uso pessoal e consequentemente ajudar a comunidade, como não há muito conteúdo, os releases são testados e verificados individualmente. Bom, a Fonte Principal tem como objetivo fornecer Clean Steam Files (arquivos originais Steam), Online (versões/builds que funcionam multiplayer) e Delisted/Abandonwares (jogos antigos dificeis de encontrar). Já a Fonte Fixes, o propósito é oferecer correções/features para os jogos já instalados terem Conquistas (GoldBerg Emu), Multiplayer (OnlineFix/Clientes) e até Mods, funcionalidades que melhoram a experiência de seus jogos." data-text-en="The purpose of creating these sources was for personal use and consequently to help the community, as there is not much content; releases are tested and verified individually. Well, the Main Source aims to provide Clean Steam Files (original Steam files), Online (multiplayer versions/builds) and Delisted/Abandonwares (old hard-to-find games). Now, the Source Fixes, the principle is to offer corrections/features for already installed games to have Achievements (GoldBerg Emu), Multiplayer (OnlineFix/ Clients), and even Mods, functionalities that improve the experience of your games.">The purpose of creating these sources was for personal use and consequently to help the community, as there is not much content; releases are tested and verified individually. Well, the Main Source aims to provide Clean Steam Files (original Steam files), Online (multiplayer versions/builds) and Delisted/Abandonwares (old hard-to-find games). Now, the Source Fixes, the principle is to offer corrections/features for already installed games to have Achievements (GoldBerg Emu), Multiplayer (OnlineFix/ Clients), and even Mods, functionalities that improve the experience of your games.</p>
+      <p
+        id="fonteInfo"
+        data-text-pt="O intuito de criar estas fontes foi para uso pessoal e consequentemente ajudar a comunidade, como não há muito conteúdo, os releases são testados e verificados individualmente. Bom, a Fonte Principal tem como objetivo fornecer Clean Steam Files (arquivos originais Steam), Online (versões/builds que funcionam multiplayer) e Delisted/Abandonwares (jogos antigos dificeis de encontrar). Já a Fonte Fixes, o propósito é oferecer correções/features para os jogos já instalados terem Conquistas (GoldBerg Emu), Multiplayer (OnlineFix/Clientes) e até Mods, funcionalidades que melhoram a experiência de seus jogos."
+        data-text-en="The purpose of creating these sources was for personal use and consequently to help the community, as there is not much content; releases are tested and verified individually. Well, the Main Source aims to provide Clean Steam Files (original Steam files), Online (multiplayer versions/builds) and Delisted/Abandonwares (old hard-to-find games). Now, the Source Fixes, the principle is to offer corrections/features for already installed games to have Achievements (GoldBerg Emu), Multiplayer (OnlineFix/ Clients), and even Mods, functionalities that improve the experience of your games."
+      >
+        The purpose of creating these sources was for personal use and consequently
+        to help the community, as there is not much content; releases are tested and
+        verified individually. Well, the Main Source aims to provide Clean Steam
+        Files (original Steam files), Online (multiplayer versions/builds) and
+        Delisted/Abandonwares (old hard-to-find games). Now, the Source Fixes, the
+        principle is to offer corrections/features for already installed games to have
+        Achievements (GoldBerg Emu), Multiplayer (OnlineFix/ Clients), and even Mods,
+        functionalities that improve the experience of your games.
+      </p>
       <h3 id="linkHeader" data-text-pt="Links" data-text-en="Links">Links</h3>
-      <p id="linkInfo" data-text-pt="Maioritariamente dos releases são originários e checados pela comunidade do CSRIN, bem como, de sites presentes na Mega Thread e no FMHY. Há também o uso de arquivos preservados pelo Internet Archive e por desenvolvedores de projetos para jogos antigos." data-text-en="Most of the releases are originated and checked by the CSRIN community, as well, from sites present in the Mega Thread and FMHY. There is also the use of files preserved by the Internet Archive and by developers of projects for old games.">Most of the releases are originated and checked by the CSRIN community, as well, from sites present in the Mega Thread and FMHY. There is also the use of files preserved by the Internet Archive and by developers of projects for old games.</a></p>
+      <p
+        id="linkInfo"
+        data-text-pt="Maioritariamente dos releases são originários e checados pela comunidade do CSRIN, bem como, de sites presentes na Mega Thread e no FMHY. Há também o uso de arquivos preservados pelo Internet Archive e por desenvolvedores de projetos para jogos antigos."
+        data-text-en="Most of the releases are originated and checked by the CSRIN community, as well, from sites present in the Mega Thread and FMHY. There is also the use of files preserved by the Internet Archive and by developers of projects for old games."
+      >
+        Most of the releases are originated and checked by the CSRIN community, as
+        well, from sites present in the Mega Thread and FMHY. There is also the use
+        of files preserved by the Internet Archive and by developers of projects for
+        old games.
+      </p>
       <h3 id="donateHeader" data-text-pt="Doação" data-text-en="Donation">Donation</h3>
-      <p id="donateInfo" data-text-pt="Sinta-se livre para ajudar este projeto caso goste do meu trabalho, qualquer montante é muito bem vindo e ajuda a manter essas fontes ativas e com cada vez mais arquivos!" data-text-en="Feel free to help this project if you like my work, any amount is very welcome and helps to keep these sources active and with more files!">Feel free to help this project if you like my work, any amount is very welcome and helps to keep these sources active and with more files!</p>
+      <p
+        id="donateInfo"
+        data-text-pt="Sinta-se livre para ajudar este projeto caso goste do meu trabalho, qualquer montante é muito bem vindo e ajuda a manter essas fontes ativas e com cada vez mais arquivos!"
+        data-text-en="Feel free to help this project if you like my work, any amount is very welcome and helps to keep these sources active and with more files!"
+      >
+        Feel free to help this project if you like my work, any amount is very
+        welcome and helps to keep these sources active and with more files!
+      </p>
 
-      <footer id="footer" data-text-pt="© 2025 Solaris (Baseado no HTML criado por Shisuys e Kazumi, créditos para eles)." data-text-en="© 2025 Solaris (Based on HTML created by Shisuys and Kazumi, credits to them).">© 2025 Solaris (Based on HTML created by Shisuys and Kazumi, credits to them).</footer>
+      <footer
+        id="footer"
+        data-text-pt="© 2025 Solaris (Baseado no HTML criado por Shisuys e Kazumi, créditos para eles)."
+        data-text-en="© 2025 Solaris (Based on HTML created by Shisuys and Kazumi, credits to them)."
+      >
+        © 2025 Solaris (Based on HTML created by Shisuys and Kazumi, credits to
+        them).
+      </footer>
     </div>
 
     <script src="./Kazumi Fonte_files/qrcode.min.js.baixados"></script>
@@ -811,8 +957,6 @@
         pt: {
           copySuccess: "Link Copiado!",
           copySuccessVR: "Link Copiado!",
-          mbwayInstructions:
-            'Para doar via Ko-Fi:\n\n1. Abre a app no seu telemóvel\n2. Seleciona "Enviar dinheiro"\n3. Insere este número: X\n\nObrigado pela tua doação!',
           thanks: "Obrigado pela tua doação!",
           invalidAmount: "Por favor insira um valor válido maior que 0!",
           addressCopied: "Endereço SOL copiado! Você pode enviar {amount} SOL",
@@ -821,8 +965,6 @@
         en: {
           copySuccess: "Link Copied!",
           copySuccessVR: "Link Copied!",
-          mbwayInstructions:
-            'To donate via Ko-Fi:\n\n1. Open the app on your phone\n2. Select "Send money"\n3. Enter this number: X\n\nThank you for your donation!',
           thanks: "Thank you for your donation!",
           invalidAmount: "Please enter a valid amount greater than 0!",
           addressCopied: "SOL address copied! You can send {amount} SOL",
@@ -955,7 +1097,9 @@
 
       function pedidopraFonte() {
         // *** IMPORTANTE: Mude este URL para o seu link de formulário de pedidos! ***
-        window.open("https://solaristm.notion.site/Releases-1f5336f0ab3e80c0a472dd7b6f9c1d14");
+        window.open(
+          "https://solaristm.notion.site/Releases-1f5336f0ab3e80c0a472dd7b6f9c1d14"
+        );
       }
 
       function abrirModalDoacao() {
@@ -968,9 +1112,7 @@
 
       function doarPayPal() {
         // *** IMPORTANTE: Mude este URL para o seu link de doação do PayPal! ***
-        window.open(
-          "https://donate.stripe.com/6oU14p8Yx3Ok5xP3gkbMQ00"
-        );
+        window.open("https://donate.stripe.com/6oU14p8Yx3Ok5xP3gkbMQ00");
         fecharModal();
       }
 
@@ -980,25 +1122,7 @@
         fecharModal();
       }
 
-      function doarMBWay() {
-        // *** IMPORTANTE: Mude este número para o seu número de MB Way! ***
-        const phoneNumber = "351939224252";
-
-        if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-          window.location.href = `mbway://sendtransfer?phone=${phoneNumber}`;
-
-          setTimeout(() => {
-            window.open(`https://www.mbway.pt`, "_blank");
-          }, 2000);
-        } else {
-          const message = translations[
-            currentLanguage
-          ].mbwayInstructions.replace("{phone}", phoneNumber);
-          alert(message);
-        }
-
-        fecharModal();
-      }
+      // Função doarMBWay() removida. O link Ko-Fi agora está direto no HTML.
 
       function mostrarOpcoes(regiao) {
         document.querySelectorAll(".payment-options").forEach((el) => {
@@ -1095,6 +1219,5 @@
         }
       };
     </script>
-  
-
-</body></html>
+  </body>
+</html>
