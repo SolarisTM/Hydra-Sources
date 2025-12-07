@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="./Kazumi Fonte_files/css2" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script
       defer
       src="./Kazumi Fonte_files/beacon.min.js.baixados"
@@ -195,6 +199,28 @@
           max-width: 150px;
         }
       }
+
+      /* ===== SOCIAL ICONS STYLES (Novo) ===== */
+      .social-icons {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icon {
+        color: #a3a9ff;
+        font-size: 1.5rem;
+        transition: color 0.3s, transform 0.2s;
+      }
+
+      .social-icon:hover {
+        color: #8b96ff;
+        transform: scale(1.1);
+      }
+      /* Fim SOCIAL ICONS STYLES */
 
       header {
         padding-top: 80px;
@@ -552,6 +578,32 @@
     </style>
   </head>
   <body>
+    <div class="social-icons">
+      <a
+        href="SUA_URL_DO_GITHUB"
+        target="_blank"
+        class="social-icon"
+        title="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+      <a
+        href="SUA_URL_DO_TELEGRAM"
+        target="_blank"
+        class="social-icon"
+        title="Telegram"
+      >
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a
+        href="SUA_URL_DO_DISCORD"
+        target="_blank"
+        class="social-icon"
+        title="Discord"
+      >
+        <i class="fab fa-discord"></i>
+      </a>
+    </div>
     <div id="updateBar" class="update-bar" style="display: none">
       <div class="update-bar-content">
         <div class="update-bar-loading">
@@ -668,7 +720,7 @@
             >
           </button>
           <a
-            href="https://ko-fi.com/solaristm"
+            href="COLOQUE_A_SUA_URL_DO_KOFI_AQUI"
             target="_blank"
             class="payment-btn mbway-btn"
             style="text-decoration: none"
@@ -712,7 +764,8 @@
 
           <div id="solana-qr-container">
             <canvas id="solanaQrCode"></canvas>
-            <p style="font-size: 0.8rem; margin-top: 10px"
+            <p
+              style="font-size: 0.8rem; margin-top: 10px"
               data-text-pt="Escaneie com Phantom Wallet"
               data-text-en="Scan with Phantom Wallet"
             >
@@ -762,7 +815,9 @@
         of files preserved by the Internet Archive and by developers of projects for
         old games.
       </p>
-      <h3 id="donateHeader" data-text-pt="Doação" data-text-en="Donation">Donation</h3>
+      <h3 id="donateHeader" data-text-pt="Doação" data-text-en="Donation">
+        Donation
+      </h3>
       <p
         id="donateInfo"
         data-text-pt="Sinta-se livre para ajudar este projeto caso goste do meu trabalho, qualquer montante é muito bem vindo e ajuda a manter essas fontes ativas e com cada vez mais arquivos!"
@@ -1121,8 +1176,6 @@
         window.open("https://livepix.gg/solaristm");
         fecharModal();
       }
-
-      // Função doarMBWay() removida. O link Ko-Fi agora está direto no HTML.
 
       function mostrarOpcoes(regiao) {
         document.querySelectorAll(".payment-options").forEach((el) => {
