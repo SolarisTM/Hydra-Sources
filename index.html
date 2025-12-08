@@ -222,6 +222,49 @@
       }
       /* Fim SOCIAL ICONS STYLES */
 
+      /* ===== RECOMMENDED SOURCES BUTTON STYLES (Novo) ===== */
+      .recommended-sources {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+      }
+
+      .recommended-sources a {
+        background-color: #3b3f4b;
+        color: #ffffff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.2s, background-color 0.3s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .recommended-sources a:hover {
+        background-color: #505360;
+        transform: scale(1.05);
+      }
+
+      /* Responsividade para o botão */
+      @media (max-width: 768px) {
+        .recommended-sources {
+          bottom: 15px;
+          left: 15px;
+        }
+        .recommended-sources a {
+          padding: 10px 18px;
+          font-size: 0.9rem;
+        }
+      }
+      /* Fim RECOMMENDED SOURCES BUTTON STYLES */
+
       header {
         padding-top: 80px;
         font-size: 2.5rem;
@@ -602,6 +645,17 @@
         title="Discord"
       >
         <i class="fab fa-discord"></i>
+      </a>
+    </div>
+
+    <div class="recommended-sources">
+      <a href="recommended.html">
+        <i class="fas fa-list"></i>
+        <span
+          data-text-pt="Fontes Recomendadas"
+          data-text-en="Recommended Sources"
+          >Recommended Sources</span
+        >
       </a>
     </div>
     <div id="updateBar" class="update-bar" style="display: none">
@@ -1083,6 +1137,7 @@
             if (element.tagName === "INPUT") {
               element.placeholder = text;
             } else {
+              // Altera o conteúdo de texto para SPANs e outros elementos
               element.innerHTML = text;
             }
           }
