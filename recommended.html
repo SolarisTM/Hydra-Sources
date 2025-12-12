@@ -703,8 +703,8 @@
         FitGirl - Install Source
       </button>
       <button
-        id="copyBtn"
-        onclick="copiarLinkVR()"
+        id="addBtn"
+        onclick="abrirHydraSteamRIP()"
         data-text-pt="SteamRIP - Instalar Fonte"
         data-text-en="SteamRIP - Install Source"
       >
@@ -1167,21 +1167,22 @@
 
       function copiarLink() {
         // *** IMPORTANTE: Mude este URL para o seu arquivo .json principal! ***
+        // Esta função não é mais usada pelo FitGirl, que agora usa abrirHydraFitGirl()
         navigator.clipboard.writeText(
           "https://hydralinks.cloud/sources/fitgirl.json"
         );
         alert(translations[currentLanguage].copySuccess);
       }
-
-      function copiarLinkVR() {
-        // *** IMPORTANTE: Mude este URL para o seu arquivo .json VR! ***
-        navigator.clipboard.writeText(
-          "https://hydralinks.pages.dev/sources/steamrip.json"
-        );
-        alert(translations[currentLanguage].copySuccessVR);
-      }
       
-      // NOVA FUNÇÃO para o botão FitGirl
+      // NOVA FUNÇÃO para o botão SteamRIP (substituindo copiarLinkVR)
+      function abrirHydraSteamRIP() {
+        // URL da fonte SteamRIP
+        window.open(
+          "hydralauncher://install-source?urls=https://hydralinks.pages.dev/sources/steamrip.json"
+        );
+      }
+
+      // FUNÇÃO para o botão FitGirl (da alteração anterior)
       function abrirHydraFitGirl() {
         // URL da fonte FitGirl
         window.open(
