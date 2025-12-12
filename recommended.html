@@ -695,8 +695,8 @@
         Xatab - Install Source
       </button>
       <button
-        id="copyBtn"
-        onclick="copiarLink()"
+        id="addBtn"
+        onclick="abrirHydraFitGirl()"
         data-text-pt="FitGirl - Instalar Fonte"
         data-text-en="FitGirl - Install Source"
       >
@@ -1179,6 +1179,14 @@
           "https://hydralinks.pages.dev/sources/steamrip.json"
         );
         alert(translations[currentLanguage].copySuccessVR);
+      }
+      
+      // NOVA FUNÇÃO para o botão FitGirl
+      function abrirHydraFitGirl() {
+        // URL da fonte FitGirl
+        window.open(
+          "hydralauncher://install-source?urls=https://hydralinks.cloud/sources/fitgirl.json"
+        );
       }
 
       function abrirHydra() {
