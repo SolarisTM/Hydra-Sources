@@ -296,261 +296,6 @@
         transform: scale(1.05);
       }
 
-      .content button.donate {
-        background-color: #6a1b9a;
-        background-image: linear-gradient(45deg, #0070ba 50%, #ff0800 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition: all 0.3s ease;
-      }
-
-      .content button.donate:hover {
-        background-position: left bottom;
-        transform: scale(1.05);
-      }
-
-      /* Modal de escolha */
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-
-      .modal-content {
-        background-color: #23262f;
-        margin: 15% auto;
-        padding: 20px;
-        border-radius: 10px;
-        width: 90%;
-        max-width: 500px;
-        min-width: 320px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        animation: modalopen 0.4s;
-      }
-
-      @keyframes modalopen {
-        from {
-          opacity: 0;
-          transform: translateY(-50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .modal-header h2 {
-        margin: 0;
-        color: #ffffff;
-      }
-
-      .close {
-        color: #aaa;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      .close:hover {
-        color: #fff;
-      }
-
-      .payment-options {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        width: 100%;
-        padding: 0 20px;
-        box-sizing: border-box;
-      }
-
-      .payment-btn {
-        padding: 12px 24px;
-        border: none;
-        border-radius: 8px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        transition: transform 0.2s;
-        width: 100%;
-        max-width: 280px;
-        min-width: 280px;
-      }
-
-      .payment-btn:hover {
-        transform: scale(1.02);
-      }
-
-      .paypal-btn {
-        background-color: #0070ba;
-      }
-
-      .livepix-btn {
-        background-color: #181818;
-      }
-
-      .mbway-btn {
-        background-color: #ff0800;
-      }
-
-      .solana-btn {
-        background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-        color: white;
-      }
-
-      .solana-btn:hover {
-        background: linear-gradient(135deg, #7a36cc 0%, #12d185 100%);
-      }
-
-      .region-options {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-      }
-
-      .region-btn {
-        background: none;
-        border: none;
-        color: #a3a9ff;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 5px 10px;
-      }
-
-      .region-btn.active {
-        border-bottom: 2px solid #a3a9ff;
-      }
-
-      #solana-amount-selector {
-        margin-bottom: 15px;
-        width: 100%;
-      }
-
-      #solana-amount-selector h4 {
-        color: #a3a9ff;
-        margin-bottom: 10px;
-      }
-
-      .amount-buttons {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .amount-btn {
-        background: #3b3f4b;
-        color: white;
-        border: none;
-        padding: 8px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s;
-      }
-
-      .amount-btn:hover {
-        background: #505360;
-      }
-
-      .amount-btn.active {
-        background: #14f195;
-        color: #23262f;
-        font-weight: bold;
-      }
-
-      #custom-amount {
-        width: 100px;
-        padding: 8px;
-        background: #2d303b;
-        color: white;
-        border: 1px solid #3b3f4b;
-        border-radius: 5px;
-        text-align: center;
-      }
-
-      #solana-qr-container {
-        display: none;
-        text-align: center;
-        margin: 15px auto;
-        width: fit-content;
-      }
-
-      #solanaQrCode {
-        background: white;
-        padding: 10px;
-        border-radius: 8px;
-      }
-
-      #donationHistory {
-        max-width: 800px;
-        margin: 0 auto 40px;
-        background: rgba(34, 36, 43, 0.7);
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      #donationHistory h3 {
-        text-align: center;
-        margin-bottom: 15px;
-      }
-
-      #donationList {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      #donationList th {
-        padding: 10px;
-        background: #2d303b;
-      }
-
-      #donationList td {
-        padding: 10px;
-        border-bottom: 1px solid #3b3f4b;
-      }
-
-      .status-pending {
-        color: #ff5a00;
-      }
-
-      .status-confirmed {
-        color: #14f195;
-      }
-
-      .verify-btn {
-        background: #3b3f4b;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 15px;
-        transition: all 0.3s;
-      }
-
-      .verify-btn:hover {
-        background: #505360;
-      }
-
       .info {
         max-width: 800px;
         margin: 0 auto 40px;
@@ -719,128 +464,14 @@
         GOG - Install Source
       </button>
       <button
-        class="donate"
-        onclick="abrirModalDoacao()"
-        data-text-pt="Ajude o Projeto"
-        data-text-en="Help the Project"
+        id="addBtn"
+        onclick="window.open('https://ko-fi.com/solaristm', '_blank')"
+        data-text-pt="Apoie via Ko-Fi"
+        data-text-en="Support via Ko-Fi"
       >
-        Help the Project
+        Support via Ko-Fi
       </button>
-    </div>
-
-    <div id="donationModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2
-            id="modal-title"
-            data-text-pt="Escolha o método de doação"
-            data-text-en="Choose donation method"
-          >
-            Choose donation method
-          </h2>
-          <span class="close" onclick="fecharModal()">×</span>
-        </div>
-
-        <div class="region-options">
-          <button
-            class="region-btn active"
-            onclick="mostrarOpcoes('tradicional')"
-            data-text-pt="Tradicional"
-            data-text-en="Traditional"
-          >
-            Traditional
-          </button>
-          <button
-            class="region-btn"
-            onclick="mostrarOpcoes('crypto')"
-            data-text-pt="Criptomoedas"
-            data-text-en="Cryptocurrency"
-          >
-            Cryptocurrency
-          </button>
-        </div>
-
-        <div id="opcoes-tradicional" class="payment-options" style="display: flex">
-          <button class="payment-btn paypal-btn" onclick="doarPayPal()">
-            <img src="img/stripe.png" alt="Stripe" width="37" height="23" />
-            <span data-text-pt="Doar via Stripe" data-text-en="Donate via Stripe"
-              >Donate via Stripe</span
-            >
-          </button>
-          <button class="payment-btn livepix-btn" onclick="doarLivePix()">
-            <img src="img/livepix.png" alt="LivePix" width="37" height="23" />
-            <span data-text-pt="Doar via LivePix" data-text-en="Donate via LivePix"
-              >Donate via LivePix</span
-            >
-          </button>
-          <a
-            href="https://ko-fi.com/solaristm"
-            target="_blank"
-            class="payment-btn mbway-btn"
-            style="text-decoration: none"
-          >
-            <span data-text-pt="Apoie via Ko-Fi" data-text-en="Support via Ko-Fi"
-              >Support via Ko-Fi</span
-            >
-          </a>
-          </div>
-
-        <div
-          id="opcoes-crypto"
-          class="payment-options"
-          style="display: none; flex-direction: column"
-        >
-          <div id="solana-amount-selector">
-            <h4 data-text-pt="Escolha o valor (SOL):" data-text-en="Choose amount (SOL):">
-              Choose amount (SOL):
-            </h4>
-            <div class="amount-buttons">
-              <button class="amount-btn active" onclick="setSolAmount(1)">
-                1 SOL
-              </button>
-              <button class="amount-btn" onclick="setSolAmount(5)">
-                5 SOL
-              </button>
-              <button class="amount-btn" onclick="setSolAmount(10)">
-                10 SOL
-              </button>
-              <input
-                type="number"
-                id="custom-amount"
-                data-placeholder-pt="Outro valor"
-                data-placeholder-en="Other amount"
-                placeholder="Other amount"
-                min="0.1"
-                step="0.1"
-              />
-            </div>
-          </div>
-
-          <div id="solana-qr-container">
-            <canvas id="solanaQrCode"></canvas>
-            <p
-              style="font-size: 0.8rem; margin-top: 10px"
-              data-text-pt="Escaneie com Phantom Wallet"
-              data-text-en="Scan with Phantom Wallet"
-            >
-              Scan with Phantom Wallet
-            </p>
-          </div>
-          <button class="payment-btn solana-btn" onclick="doarViaSolana()">
-            <img
-              src="./Kazumi Fonte_files/solana-sol-logo-png_seeklogo-423095.png"
-              alt="Solana"
-              width="20"
-            />
-            <span
-              data-text-pt="Gerar Link/QR Code"
-              data-text-en="Generate Link/QR Code"
-              >Generate Link/QR Code</span
-            >
-          </button>
-        </div>
       </div>
-    </div>
 
     <div class="info">
       <h3 id="fonteHeader" data-text-pt="Sobre" data-text-en="About">About</h3>
@@ -884,14 +515,6 @@
     <script src="./Kazumi Fonte_files/qrcode.min.js.baixados"></script>
 
     <script>
-      // Configuração da Carteira
-      const solanaConfig = {
-        // *** IMPORTANTE: Mude este endereço para o seu! ***
-        address: "Go2kCrGXbyj8rJJgC7MPbDpGVSjTv72fkKvbf51wP8GX",
-        memo: "DOACAO_KAZUMI",
-      };
-
-      let selectedSolAmount = 1;
       let currentLanguage = "pt";
 
       // ===== UPDATE BAR FUNCTIONALITY =====
@@ -1056,18 +679,10 @@
         pt: {
           copySuccess: "Link Copiado!",
           copySuccessVR: "Link Copiado!",
-          thanks: "Obrigado pela tua doação!",
-          invalidAmount: "Por favor insira um valor válido maior que 0!",
-          addressCopied: "Endereço SOL copiado! Você pode enviar {amount} SOL",
-          copyManually: "Copie manualmente seu endereço Solana:",
         },
         en: {
           copySuccess: "Link Copied!",
           copySuccessVR: "Link Copied!",
-          thanks: "Thank you for your donation!",
-          invalidAmount: "Please enter a valid amount greater than 0!",
-          addressCopied: "SOL address copied! You can send {amount} SOL",
-          copyManually: "Manually copy your Solana address:",
         },
       };
 
@@ -1155,26 +770,7 @@
         loadRecentUpdates();
       }
 
-      // Funções de doação
-      function setSolAmount(amount) {
-        selectedSolAmount = amount;
-        document.querySelectorAll(".amount-btn").forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        event.target.classList.add("active");
-        document.getElementById("custom-amount").value = "";
-      }
-
-      function copiarLink() {
-        // *** IMPORTANTE: Mude este URL para o seu arquivo .json principal! ***
-        // Esta função não é mais usada pelo FitGirl, que agora usa abrirHydraFitGirl()
-        navigator.clipboard.writeText(
-          "https://hydralinks.cloud/sources/fitgirl.json"
-        );
-        alert(translations[currentLanguage].copySuccess);
-      }
-      
-      // NOVA FUNÇÃO para o botão SteamRIP (substituindo copiarLinkVR)
+      // Funções de instalação
       function abrirHydraSteamRIP() {
         // URL da fonte SteamRIP
         window.open(
@@ -1182,7 +778,6 @@
         );
       }
 
-      // FUNÇÃO para o botão FitGirl (da alteração anterior)
       function abrirHydraFitGirl() {
         // URL da fonte FitGirl
         window.open(
@@ -1211,100 +806,6 @@
         );
       }
 
-      function abrirModalDoacao() {
-        document.getElementById("donationModal").style.display = "block";
-      }
-
-      function fecharModal() {
-        document.getElementById("donationModal").style.display = "none";
-      }
-
-      function doarPayPal() {
-        // *** IMPORTANTE: Mude este URL para o seu link de doação do PayPal! ***
-        window.open("https://donate.stripe.com/6oU14p8Yx3Ok5xP3gkbMQ00");
-        fecharModal();
-      }
-
-      function doarLivePix() {
-        // *** IMPORTANTE: Mude este URL para o seu link de doação LivePix/Pix! ***
-        window.open("https://livepix.gg/solaristm");
-        fecharModal();
-      }
-
-      function mostrarOpcoes(regiao) {
-        document.querySelectorAll(".payment-options").forEach((el) => {
-          el.style.display = "none";
-          void el.offsetHeight;
-        });
-
-        document.querySelectorAll(".region-btn").forEach((btn) => {
-          btn.classList.remove("active");
-        });
-
-        const opcaoSelecionada = document.getElementById(`opcoes-${regiao}`);
-        opcaoSelecionada.style.display = "flex";
-        document
-          .querySelector(`.region-btn[onclick="mostrarOpcoes('${regiao}')"]`)
-          .classList.add("active");
-
-        if (regiao === "tradicional") {
-          document.getElementById("solana-qr-container").style.display = "none";
-        }
-      }
-
-      function gerarQrCode(amount) {
-        const qrData = `solana:${solanaConfig.address}?amount=${amount}&memo=${solanaConfig.memo}`;
-        QRCode.toCanvas(
-          document.getElementById("solanaQrCode"),
-          qrData,
-          {
-            width: 180,
-            margin: 2,
-            color: {
-              dark: "#14F195",
-              light: "#23262f",
-            },
-          },
-          (error) => {
-            if (error) console.error(error);
-          }
-        );
-      }
-
-      function doarViaSolana() {
-        const customAmount = parseFloat(
-          document.getElementById("custom-amount").value
-        );
-        const amount = customAmount || selectedSolAmount;
-
-        if (customAmount && (customAmount <= 0 || isNaN(customAmount))) {
-          alert(translations[currentLanguage].invalidAmount);
-          return;
-        }
-
-        gerarQrCode(amount);
-        document.getElementById("solana-qr-container").style.display = "block";
-
-        window.location.href = `https://phantom.app/ul/v1/transfer?recipient=${solanaConfig.address}&amount=${amount}`;
-
-        setTimeout(() => {
-          navigator.clipboard
-            .writeText(solanaConfig.address)
-            .then(() => {
-              const message = translations[
-                currentLanguage
-              ].addressCopied.replace("{amount}", amount);
-              alert(message);
-            })
-            .catch(() => {
-              prompt(
-                translations[currentLanguage].copyManually,
-                solanaConfig.address
-              );
-            });
-        }, 500);
-      }
-
       // Inicialização
       document.addEventListener("DOMContentLoaded", () => {
         document
@@ -1319,12 +820,6 @@
         // Load update bar
         loadRecentUpdates();
       });
-
-      window.onclick = function (event) {
-        if (event.target == document.getElementById("donationModal")) {
-          fecharModal();
-        }
-      };
     </script>
   </body>
 </html>
