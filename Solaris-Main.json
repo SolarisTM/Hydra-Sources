@@ -66,6 +66,30 @@
       "uris": ["magnet:?xt=urn:btih:A6CRQKP7WTJDCCUNQHO4IAQ37GX75X4S&dn=iw5-plutonium-v5178&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce"],
       "uploadDate": "2025-12-20T20:00:00.000Z",
       "fileSize": "17.16 GB"
+    },
+    {
+      "title": "Call of Duty® (2003) [Portable] | 🛜 Online | 🛡️ Client",
+      "uris": ["magnet:?xt=urn:btih:CWVQYJC3OFNHJV7T7IEQPWHGSNNMS57W&dn=codx-v1.1&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce"],
+      "uploadDate": "2025-12-30T20:00:00.000Z",
+      "fileSize": "1.26 GB"
+    },
+    {
+      "title": "Call of Duty® 2 [Portable] | 🛜 Online | 🛡️ Client",
+      "uris": ["magnet:?xt=urn:btih:3Y4GJQXCUQ5P4R5POBMMHCJRECVJAOFN&dn=cod2x-v1.4.6.3&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce"],
+      "uploadDate": "2025-12-30T20:00:00.000Z",
+      "fileSize": "3.42 GB"
+    },
+    {
+      "title": "Call of Duty: United Offensive [Portable] | 🛜 Online | 🛡️ Client",
+      "uris": ["magnet:?xt=urn:btih:474UE2BJSA5UKIESLFF7UVQMYENQTSRG&dn=coduo-v1.51&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce"],
+      "uploadDate": "2025-12-30T20:00:00.000Z",
+      "fileSize": "2.59 GB"
+    },
+    {
+      "title": "Medal of Honor™ [Portable] | 🛜 Online | 🛡️ Client",
+      "uris": ["magnet:?xt=urn:btih:LC2T3RX3YS3WLCWBPZ75XEHXTBK6S3RF&dn=medal-of-honor-project-neptune-vl10m8s2&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce"],
+      "uploadDate": "2025-12-30T20:00:00.000Z",
+      "fileSize": "2.48 GB"
     }
   ]
 }
