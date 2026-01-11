@@ -108,6 +108,18 @@
       "uris": ["magnet:?xt=urn:btih:NA36N5H4FHRSQT4FX3OJROT46E6TF37C&dn=SAW_CSF&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce"],
       "uploadDate": "2025-12-30T20:00:00.000Z",
       "fileSize": "2.27 GB"
+    },
+    {
+      "title": "Quantum of Solace [Portable] | 🛜 Online | 🛡️ Client | 🗄️ AbandonWare",
+      "uris": ["magnet:?xt=urn:btih:5b949cb67fe0d6b747f1f54fad3f2f491790e68f&dn=qos-plutonium&xl=2497708032&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce&ws=http://ia601709.us.archive.org/27/items/&ws=http://ia801709.us.archive.org/27/items/&ws=https://archive.org/download/"],
+      "uploadDate": "2025-12-30T20:00:00.000Z",
+      "fileSize": "2.30 GB"
+    },
+    {
+      "title": "Battlefield 2 [Portable] | 🛜 Online | 🛡️ Client | 🗄️ AbandonWare",
+      "uris": ["magnet:?xt=urn:btih:c62cb3ef1c21314e33f6e925240b0913d838961d&dn=battlefield-2-v1.50&xl=3852468224&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce&ws=http://ia803107.us.archive.org/3/items/&ws=http://ia903107.us.archive.org/3/items/&ws=https://archive.org/download/"],
+      "uploadDate": "2025-12-30T20:00:00.000Z",
+      "fileSize": "3.57 GB"
     }
   ]
 }
