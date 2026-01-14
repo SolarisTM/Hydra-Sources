@@ -1,0 +1,22 @@
+{
+  "name": "Meu Backup CoD4x v21.3 - Archive Torrent",
+  "games": [
+    {
+      "title": "Call of Duty: Modern Warfare (2007) [Online Ready] CoD4x v21.3",
+      "version": "CoD4x v21.3 (Steam Clean)",
+      "size": 6656,
+      "downloadLinks": [
+        {
+          "name": "Torrent Completo (Archive.org)",
+          "url": "https://archive.org/download/cod4x-v21.3/cod4x-v21.3_archive.torrent",
+          "host": "torrent"
+        },
+        {
+          "name": "HTTP ZIP Direto (Fallback)",
+          "url": "https://archive.org/download/cod4x-v21.3/Call%20of%20Duty%204.zip",
+          "host": "archive.org"
+        }
+      ]
+    }
+  ]
+}
