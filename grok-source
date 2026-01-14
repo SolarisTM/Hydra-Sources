@@ -1,0 +1,17 @@
+{
+  "name": "Archive.org",
+  "games": [
+    {
+      "title": "Call of Duty: Modern Warfare (2007) [Online Ready] CoD4x v21.3",
+      "version": "CoD4x v21.3 (Steam Clean)",
+      "size": "6.5 GB",
+      "downloadLinks": [
+        {
+          "name": "Download Direto ZIP (Archive.org)",
+          "url": "https://archive.org/download/cod4x-v21.3/Call%20of%20Duty%204.zip",
+          "host": "archive.org"
+        }
+      ]
+    }
+  ]
+}
